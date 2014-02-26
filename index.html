@@ -103,6 +103,35 @@
                 }
             }
 
+
+            function recordAudio() {
+                var src = "myrecording.mp3";
+                var mediaRec = new Media(src,
+                    // success callback
+                    function() {
+                        alert("recordAudio():Audio Success");
+                    },
+
+                    // error callback
+                    function(err) {
+                        alert("recordAudio():Audio Error: "+ err.code);
+                    });
+
+                // Record audio
+                mediaRec.startRecord();
+
+                // Stop recording after 5 sec
+                var recTime = 0;
+                var recInterval = setInterval(function() {
+                    recTime = recTime + 1;
+                    setAudioPosition(recTime + " sec");
+                    if (recTime >= 5) {
+                        clearInterval(recInterval);
+                        mediaRec.stopRecord();
+                    }
+                }, 1000);
+            }
+
         </script>
 
 </head>
@@ -114,6 +143,8 @@
 
             <div data-role="content">
                 <button onclick="takeAudio()">Audioclip aufnehmen</button>
+                <br />
+                <button onclick="recordAudio()">Audioclip sadf</button>
                 <br />
             </div><!-- /content -->
             <div id="footer" data-role="footer">

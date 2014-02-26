@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id = "com.tgerzner.test_app"
+        id = "com.tgerzner.noise_app"
         version = "1.0.0">
 
-    <name>Test App</name>
+    <name>Noise App</name>
 
     <description>
-        This is Sparta!!!!
+        Noise Application
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">

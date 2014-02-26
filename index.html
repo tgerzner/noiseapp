@@ -106,30 +106,35 @@
 
             function recordAudio() {
                 var src = "myrecording.mp3";
-                var mediaRec = new Media(src,
-                    // success callback
-                    function() {
-                        alert("recordAudio():Audio Success");
-                    },
-
-                    // error callback
-                    function(err) {
-                        alert("recordAudio():Audio Error: "+ err.code);
-                    });
+                var mediaRec = new Media(src, onSuccess, onError);
 
                 // Record audio
                 mediaRec.startRecord();
 
-                // Stop recording after 5 sec
+                // Stop recording after 10 sec
                 var recTime = 0;
+                alert("Oh Yeah")
                 var recInterval = setInterval(function() {
+                    alert("What?")
                     recTime = recTime + 1;
                     setAudioPosition(recTime + " sec");
-                    if (recTime >= 5) {
+                    if (recTime >= 10) {
+                        alert("safgds")
                         clearInterval(recInterval);
                         mediaRec.stopRecord();
                     }
                 }, 1000);
+            }
+
+            function onSuccess() {
+                alert("recordAudio():Audio Success");
+            }
+
+            // onError Callback
+            //
+            function onError(error) {
+                alert('code: '    + error.code    + '\n' +
+                      'message: ' + error.message + '\n');
             }
 
         </script>

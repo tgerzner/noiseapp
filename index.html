@@ -25,6 +25,10 @@
                 navigator.device.capture.captureAudio(captureSuccess, captureError, {duration: 5})
             }
 
+            function captureError(e){
+                alert(e.code + e.msg)
+            }
+
             function captureSuccess(mediafile){
                 if (debug == true){
                     alert("audioSuc")

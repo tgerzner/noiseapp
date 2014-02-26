@@ -4,7 +4,7 @@
     <list default="true" id="ca892c9a-a87d-49b3-b312-fd42f562e6f6" name="Default" comment="" />
     <ignored path="Noise_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="ca892c9a-a87d-49b3-b312-fd42f562e6f6" time="1393411809882" ignored="false" />
+    <file path="/index.html" changelist="ca892c9a-a87d-49b3-b312-fd42f562e6f6" time="1393419359591" ignored="false" />
     <file path="/config.xml" changelist="ca892c9a-a87d-49b3-b312-fd42f562e6f6" time="1393417401479" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="40" selection-start="996" selection-end="996" vertical-scroll-proportion="-15.692307">
+            <state line="97" column="18" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.70051813">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="26" selection-start="274" selection-end="274" vertical-scroll-proportion="0.10703043">
+            <state line="38" column="8" selection-start="1431" selection-end="1431" vertical-scroll-proportion="-25.84">
               <folding />
             </state>
           </provider>
@@ -53,8 +53,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -115,6 +115,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test_app" />
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -212,16 +213,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="40" selection-start="996" selection-end="996" vertical-scroll-proportion="-15.692307">
+        <state line="38" column="8" selection-start="1431" selection-end="1431" vertical-scroll-proportion="-25.84">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="274" selection-end="274" vertical-scroll-proportion="0.10703043">
+        <state line="97" column="18" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.70051813">
           <folding />
         </state>
       </provider>

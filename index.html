@@ -9,6 +9,7 @@
         <script src="js/main.js"></script>
         <script src="cordova.js"></script>
         <script type="text/javascript">
+            var debug = true
 
             // Wait for PhoneGap to load
             document.addEventListener("deviceready", onDeviceReady, false);
@@ -18,19 +19,85 @@
             }
 
             function takeAudio(){
+                if (debug == true){
+                    alert("get audio")
+                }
                 navigator.device.capture.captureAudio(captureSuccess, captureError, {duration: 5})
             }
 
             function captureSuccess(mediafile){
-                uploadFile(mediafile[0])
+                if (debug == true){
+                    alert("audioSuc")
+                }
+                get_geolocation(mediafile[0])
             }
 
+            function get_geolocation(mediafile){
+                if (debug == true){
+                    alert("get geoloc")
+                }
+
+                lat, lon = navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
 
 
+                function geoloc_onSuccess(position) {
+                    if (debug == true){
+                        alert("geoloc on success")
+                    }
+                    lat = position.coords.latitude
+                    lon = position.coords.longitude
+                    saveAudio(mediafile, lat, lon)
+                }
 
+                function geoloc_onError(error) {
+                    var errString = '';
+                    if (error.code) {
+                        switch (error.code) {
+                            case 1:
+                                errString =
+                                        'We do not have permission';
+                                break;
+                            case 2:
+                                errString =
+                                        'The location can not be determined';
+                                break;
+                            case 3:
+                                errString =
+                                        'There was a timeout';
+                                break;
+                            default:
+                                errString =
+                                        'Unknown error';
+                                break
+                        }
+                    }
+                }
+            }
 
+            function save_audio(mediafile, lat, lon){
+                if (debug == true){
+                    alert("save audio")
+                }
 
-
+                var date = new Date();
+                y = date.getFullYear()
+                m = date.getMonth()+1
+                d = date.getDate()
+                h = date.getHours()
+                min = date.getMinutes()
+                audioId = y + "-" + m + "-" + d + "-" + h + "-" + min
+                audioId = "SeeYou_" + lat + "_" + lon + "_" + photoId
+                if (debug == true){
+                    alert(mediafile.fullPath)
+                }
+                try {
+                    localStorage.setItem(audioId, mediafile.fullPath);
+                } catch (e) {
+                    if (e == QUOTA_EXCEEDED_ERR) {
+                        alert('Quota exceeded!');
+                    }
+                }
+            }
 
         </script>
 
@@ -38,7 +105,7 @@
 <body>
     <div data-role="page">
             <div data-role="header">
-                <h1 id="title">See You</h1>
+                <h1 id="title">Noise App</h1>
             </div><!-- /header -->
 
             <div data-role="content">

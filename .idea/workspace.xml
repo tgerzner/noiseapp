@@ -4,7 +4,7 @@
     <list default="true" id="ca892c9a-a87d-49b3-b312-fd42f562e6f6" name="Default" comment="" />
     <ignored path="Noise_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="ca892c9a-a87d-49b3-b312-fd42f562e6f6" time="1393422579973" ignored="false" />
+    <file path="/index.html" changelist="ca892c9a-a87d-49b3-b312-fd42f562e6f6" time="1393422873180" ignored="false" />
     <file path="/config.xml" changelist="ca892c9a-a87d-49b3-b312-fd42f562e6f6" time="1393417401479" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="39" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.4574468">
+            <state line="119" column="40" selection-start="4317" selection-end="4317" vertical-scroll-proportion="0.42340425">
               <folding />
             </state>
           </provider>
@@ -222,7 +222,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="39" selection-start="4413" selection-end="4413" vertical-scroll-proportion="0.4574468">
+        <state line="119" column="40" selection-start="4317" selection-end="4317" vertical-scroll-proportion="0.42340425">
           <folding />
         </state>
       </provider>
